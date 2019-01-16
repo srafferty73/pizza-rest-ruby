@@ -1,0 +1,14 @@
+<h1>Details of individual pizza ordered</h1>
+
+<!-- <p>Pizza ordered by: <%= @pizza_order.pretty_name%> costing: £<%= @pizza_order.total%> </p> -->
+
+<p> Name: <%= @pizza_order.pretty_name %></p>
+<p> Quantity: <%= @pizza_order.quantity %></p>
+<p> Topping: <%= @pizza_order.topping %></p>
+
+<a href="/pizza-orders/<%= @pizza_order.id %>/edit">Edit this order</a>
+<br>
+<form action="/pizza-orders/<%= @pizza_order.id %>" method="post">
+  <input type=submit value = "Delete this order">
+  <input type="hidden" name="_method" value="delete">
+</form>

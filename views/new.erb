@@ -1,0 +1,23 @@
+<h1>Add New Order</h1>
+
+<form action="/pizza-orders" method="post">
+  <label for="first-name">First name: </label>
+  <input type="text" id="first-name" name="first_name" placeholder = "First name" value="">
+
+  <label for="last-name">Last name: </label>
+  <input type="text" id="last-name" name="last_name" placeholder = "Last name" value="">
+
+  <label for="quantity">Quantity: </label>
+  <input type="number" id="quantity" name="quantity" min = "1" value="">
+
+  <label for="pizza-select">Select a topping:</label>
+  <select id="pizza-select" name="topping">
+    <option value="Margherita">Margherita</option>
+    <option value="Pepperoni">Pepperoni</option>
+    <option value="Mushroom">Mushroom</option>
+    <option value="Anchovy">Anchovy</option>
+  </select>
+
+  <input type="submit" value="Add New Order">
+
+</form>
